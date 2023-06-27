@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Jogo de adivinhar</title>
+</head>
+<body onload="iniciar()">
+        
+    <div class="container">
+        <h1>Adivinhe o número</h1>
+        <h2>1 - 100</h2>
+        
+
+        <h2>Seu palpite: <span id="tentou"></span></h2> 
+        <div class="palpite">
+            <input type="number" id="entrada" min="1" max="100" onchange="compare()">
+        </div>
+
+        <h3>Número de tentativas: <span id="tentativas"></span></h3> 
+
+        <h3>Seu palpite: <span id="palpite"></span></h3>
+
+        <div class="botao">
+            <button id="botao" onclick="novoJogo()"> Novo Jogo </button>
+        </div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
